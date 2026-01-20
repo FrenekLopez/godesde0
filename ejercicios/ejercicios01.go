@@ -7,7 +7,7 @@ import (
 func Conversion(texto string) (int, string) {
 	numero, err := strconv.Atoi(texto)
 
-	// Para manelar errores se maneja la palabra nil.
+	// Para manejar errores se emplea la palabra nil.
 	if err != nil {
 		return 0, "Existio un error" + err.Error()
 	}

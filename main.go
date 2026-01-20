@@ -1,17 +1,17 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/freneklopez/godesde0/ejercicios"
 )
 
 func main() {
+	//1
 	/* variables.MuestroEnteros()
 	estado, texto := variables.ConviertoaTexto(100)
 	fmt.Println(estado)
 	fmt.Println(texto) */
 
+	//2
 	/*if os := runtime.GOOS; os == "Linux." || os == "OS X." {
 		fmt.Println("Esto no es Windows", os)
 	} else {
@@ -28,8 +28,14 @@ func main() {
 
 	}*/
 
-	texto, numero := ejercicios.Conversion("110")
+	//3
+	/*texto, numero := ejercicios.Conversion("110")
 	fmt.Printf("%d \n", texto)
 	fmt.Printf("%s", numero)
 
+	teclado.IngresoNumero()
+
+	iteraciones.Iterar()
+	*/
+	ejercicios.SolicNumero()
 }
