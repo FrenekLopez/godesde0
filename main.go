@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/freneklopez/godesde0/ejercicios"
+	"github.com/freneklopez/godesde0/funciones"
 )
 
 func main() {
@@ -36,6 +36,13 @@ func main() {
 	teclado.IngresoNumero()
 
 	iteraciones.Iterar()
-	*/
+
 	ejercicios.SolicNumero()
+	*/
+	//fmt.Println(ejercicios.TablaMultiplicar())
+	//files.GrabaTabla()
+	//files.SumaTabla()
+	//files.LeoArchivo()
+	//funciones.Calculos()
+	funciones.LlamarClosure()
 }

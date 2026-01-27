@@ -7,7 +7,8 @@ import (
 	"strconv"
 )
 
-func SolicNumero() {
+func TablaMultiplicar() string {
+	texto := ""
 
 	scanner := bufio.NewScanner(os.Stdin)
 
@@ -16,8 +17,7 @@ func SolicNumero() {
 		fmt.Println("Ingrese el numero : ")
 
 		if !scanner.Scan() {
-			fmt.Println("Error al ingresar el numero")
-			return
+			return ("Error al ingresar el numero")
 		}
 		numero, err := strconv.Atoi(scanner.Text())
 
@@ -27,11 +27,11 @@ func SolicNumero() {
 		} else {
 			for i := 1; i <= 10; i++ {
 				resultado := numero * i
-				fmt.Printf("%d x %d = %d \n", numero, i, resultado)
+				//Se contatena texto mas texto con +=
+				texto += fmt.Sprintf("%d x %d = %d \n", numero, i, resultado)
 			}
 		}
-
 		break
 	}
-
+	return texto
 }

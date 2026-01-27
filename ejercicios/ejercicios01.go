@@ -9,7 +9,7 @@ func Conversion(texto string) (int, string) {
 
 	// Para manejar errores se emplea la palabra nil.
 	if err != nil {
-		return 0, "Existio un error" + err.Error()
+		return 0, "Existe un error" + err.Error()
 	}
 
 	if numero > 100 {
