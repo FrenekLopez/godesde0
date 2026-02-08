@@ -1,9 +1,27 @@
 package main
 
-import (
-	"github.com/freneklopez/godesde0/funciones"
-)
+import "github.com/freneklopez/godesde0/mapas"
 
+/*// Version SIN puntero → No cambia el valor original
+func incrementarMal(n int) {
+	n++
+}
+
+// Version CON puntero → SI cambia el valor original
+func incrementarBien(n *int) {
+	*n++ // modifica el valor en la memoria original
+}
+
+// Punteros a structs
+type Persona struct {
+	Nombre string
+	Edad   int
+}
+
+func cumpleaños(p *Persona) {
+	p.Edad++ //No necesitas *p.Edad Go lo "desreferencia" autenticamente.
+}
+*/
 func main() {
 	//1
 	/* variables.MuestroEnteros()
@@ -44,5 +62,24 @@ func main() {
 	//files.SumaTabla()
 	//files.LeoArchivo()
 	//funciones.Calculos()
-	funciones.LlamarClosure()
+	//funciones.Exponencia(5)
+
+	/*//Ejemplos sobre como utilizar los punteros en Go
+	edad := 25
+	incrementarMal(edad)
+	fmt.Println("Despues de incrememntarMaL:", edad) // Sigue siendo 25
+
+	incrementarBien(&edad)
+	fmt.Println("Despues de incrementarBien:", edad) //ahora es 26
+
+	Eric := Persona{Nombre: "Eric", Edad: 30}
+	cumpleaños(&Eric)
+	fmt.Printf("%s ahora tiene %d años", Eric.Nombre, Eric.Edad)
+	// Eric ahora tiene 31
+	*/
+	//arreglos_slices.MuestroArreglos()
+	//arreglos_slices.MuestroSlice()
+	//arreglos_slices.Capacidad()
+	mapas.MostrarMapas()
+
 }
