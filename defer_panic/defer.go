@@ -17,7 +17,7 @@ func EjemploPanic() {
 	defer func() {
 		reco := recover()
 		if reco != nil {
-			log.Fatalf("Ocurrio un error que genero un Panic \n,%v", reco)
+			log.Fatalf("Ocurrio un error que genero un Panic \n%v", reco)
 		}
 	}()
 	a := 1

@@ -1,7 +1,9 @@
 package main
 
 import (
-	"github.com/freneklopez/godesde0/defer_panic"
+	"fmt"
+
+	"github.com/freneklopez/godesde0/gorutines"
 )
 
 /*
@@ -97,5 +99,13 @@ func main() {
 	maria := new(modelos.Mujer)
 	e.HumanoRespirando(maria)*/
 	//defer_panic.VemosDerfer()
-	defer_panic.EjemploPanic()
+	//defer_panic.EjemploPanic()
+
+	canal1 := make(chan bool)
+	go gorutines.MiNombreLento("Eric Lopez", canal1)
+	defer func() {
+		<-canal1
+	}()
+	fmt.Println("Estoy aqui")
+
 }
